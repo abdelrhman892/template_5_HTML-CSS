@@ -1,0 +1,140 @@
+:root {
+  --main-color: #2196f3; /* Primary brand color */
+  --main-color-alt: #1976d2; /* Slightly darker variant */
+  --shadow-line: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for modern design */
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-size: 1.6rem; /* Default body font size = 16px */
+  line-height: 1.6; /* Improves readability */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 36rem) {
+  .container {
+    max-width: 54rem;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .container {
+    max-width: 72rem;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .container {
+    max-width: 96rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .container {
+    max-width: 114rem;
+  }
+}
+.header {
+  background-color: white;
+  box-shadow: var(--shadow-line);
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.header__logo {
+  font-size: 2.6rem;
+  color: var(--main-color);
+  font-weight: bold;
+  height: 7.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .header__logo {
+    width: 100%;
+    height: 7rem;
+    align-items: self-end;
+  }
+}
+.header__main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .header__main-nav {
+    margin: auto;
+  }
+}
+.header__link {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  height: 7.2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  transition: all 0.3s;
+  position: relative;
+  transition: all 0.3s;
+}
+.header__link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.4rem;
+  background-color: var(--main-color);
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+.header__link:hover {
+  background-color: #fafafa;
+  color: var(--main-color);
+}
+.header__link:hover::before {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .header__link {
+    padding: 10px;
+    font-size: 1.3rem;
+    height: 7rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
