@@ -598,6 +598,57 @@ ul {
 }
 
 /* End Features*/
+
+/* start Testimonials */
+
+.testimonials {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+  background-color: var(--section-background);
+}
+
+.testimonials .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.testimonials .box {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
+  border-radius: 6px;
+  position: relative;
+}
+
+.testimonials .box img {
+  position: absolute;
+  right: -10px;
+  top: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid var(--section-background);
+}
+
+.testimonials .box .title {
+  color: #777;
+}
+
+.testimonials .box .rate .filled {
+  color: #FFC107;
+}
+
+.testimonials .box p {
+  color: #777;
+  line-height: 1.7;
+}
+
+
+/* End Testimonials */
+
+
 /* Start Animation */
 @keyframes up-and-down {
   0%,
