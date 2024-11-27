@@ -935,10 +935,6 @@ ul {
   }
 }
 
-.work-steps .info {
-
-}
-
 .work-steps .info .box {
   position: relative;
   /* display: grid; */
@@ -954,7 +950,6 @@ ul {
   border-radius: 6px;
   z-index: 1;
 }
-
 @media (max-width: 767px) {
   .work-steps .info .box {
     flex-direction: column;
@@ -1004,6 +999,180 @@ ul {
   margin: 10px 0 0 0;
 }
 /* End Work Steps */
+
+/* Start Events */
+
+.events {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+}
+
+.events .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.events img {
+  max-width: 450px;
+}
+
+@media (max-width: 991px) {
+  .events img {
+    display: none;
+  }
+
+}
+
+.events .info {
+  flex: 1;
+}
+
+.events .info .time {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media (max-width: 360px) {
+  .events .info {
+    margin-top: -66px;
+  }
+  .events .info .time {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+}
+
+.events .info .time .unit {
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  text-align: center;
+  width: 75px;
+  transition: var(--main-transition);
+}
+
+.events .info .time .unit span {
+  display: block;
+  transition: var(--main-transition);
+}
+
+.events .info .time .unit span:first-child{
+  font-size: 35px;
+  color: var(--main-color);
+  padding: 15px;
+  font-weight: bold;
+}
+
+.events .info .time .unit span:last-child{
+  padding: 0 10px 10px;
+  font-size: 13px;
+  border-top: 1px solid #d4d4d4;
+}
+
+.events .info .time .unit:hover,
+.events .info .time .unit:hover span {
+  border-color: var(--main-color-alt);
+}
+
+.events .info .title {
+  text-align: center;
+  margin: 40px 0 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.events .info .description {
+  width: 97%;
+  text-align: center;
+  margin: 20px 0 0;
+  color: #777;
+  line-height: 1.7;
+}
+
+.events .subscribe {
+  width: 100%;
+  margin-top: 50px;
+}
+.events .subscribe form {
+  margin: 20px auto;
+  width: 600px;
+  padding: 30px 40px;
+  border-radius: 50px;
+  background-color: #f6f5f5;
+  display: flex;
+  gap: 20px;
+}
+
+.events .subscribe form input:first-child {
+  flex: 1;
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  caret-color: .2s;
+}
+
+.events .subscribe form input:last-child:hover {
+
+}
+
+.events .subscribe form input:first-child::placeholder {
+  color: #777;
+  transition: var(--main-transition);
+}
+
+.events .subscribe form input:first-child:focus {
+  outline: none;
+}
+
+.events .subscribe form input:first-child:focus::placeholder {
+  color: transparent;
+}
+
+
+.events .subscribe form input:last-child {
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.events .subscribe form input:last-child:hover {
+  background-color: var(--main-color-alt);
+}
+
+
+@media (max-width: 767px) {
+  .events .subscribe form {
+    max-width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .events .subscribe form input:first-child {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+
+  .events .subscribe form input:last-child {
+    align-self: center;
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+/* End Events */
 
 /* Start Animation */
 @keyframes up-and-down {
