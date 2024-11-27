@@ -1119,7 +1119,7 @@ ul {
 }
 
 .events .subscribe form input:last-child:hover {
-
+  background-color: var(--main-color-alt);
 }
 
 .events .subscribe form input:first-child::placeholder {
